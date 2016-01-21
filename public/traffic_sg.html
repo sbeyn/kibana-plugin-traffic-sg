@@ -1,0 +1,13 @@
+<div ng-controller="KbnTrafficVisController" class="traffic-vis">
+    <div class="traffic-container" ng-repeat="metric in metrics">
+       <div class="traffic-light-container" ng-style="{'width': vis.params.width+'px', 'height': (2.68 * vis.params.width)+'px' }">
+           <div class="traffic-light">
+               <div class="light red" ng-class="{'on': metric.value <= vis.params.redThreshold && !vis.params.invertScale, 'oninvert': metric.value >= vis.params.redThreshold && vis.params.invertScale }"></div>
+               <div class="light yellow" ng-class="{'on': metric.value > vis.params.redThreshold && metric.value < vis.params.greenThreshold && !vis.params.invertScale, 'oninvert': vis.params.redThreshold > metric.value && metric.value > vis.params.greenThreshold && vis.params.invertScale}"></div>
+               <div class="light green" ng-class="{'on': metric.value >= vis.params.greenThreshold && !vis.params.invertScale, 'oninvert': metric.value <= vis.params.greenThreshold && vis.params.invertScale }"></div>
+           </div>
+       </div>
+       <br/>
+       <div>{{title}}</div>
+    </div>
+</div>
