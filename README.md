@@ -6,7 +6,7 @@ kibana-plugin-traffic
 Introduction
 -------------
 
-Ce plugin permet la créatio d'un graphique de type feu tricolor sur Kibana Version 4.3.0:
+Ce plugin permet la créatio d'un graphique de type feu tricolor sur Kibana Version 4.2.2, 4.3.0, 4.4.0:
 
 * Définition du label
 * Définition des niveaux
