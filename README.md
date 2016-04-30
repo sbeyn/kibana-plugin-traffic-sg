@@ -41,6 +41,6 @@ Désinstallation
 ---------------
 
 ```
-        $ bin/kibana plugin  --traffic line_sg
+        $ bin/kibana plugin  --remove traffic_sg
 ```
 
