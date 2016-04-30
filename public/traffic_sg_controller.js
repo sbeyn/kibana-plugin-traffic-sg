@@ -11,10 +11,7 @@ define(function (require) {
       tableGroups.tables.forEach(function (table) {
         table.columns.forEach(function (column, i) {
           var fieldFormatter = table.aggConfig(column).fieldFormatter();
-          metrics.push({
-            label: column.title,
-            value: table.rows[0][i]
-          });
+	  metrics[0] = {label: column.title, value: table.rows[0][i]};	
         });
       });
     };
