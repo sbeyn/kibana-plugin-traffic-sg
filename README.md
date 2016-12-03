@@ -2,11 +2,12 @@
 kibana-plugin-traffic
 =====================
 
+![screenshot](./screenshot.png)
 
 Introduction
 -------------
 
-Ce plugin permet la création d'un graphique de type feu tricolor sur Kibana Version 4.2.2, 4.3.0, 4.4.0, 4.5.0:
+Ce plugin permet la création d'un graphique de type feu tricolor sur Kibana Version 4.x:
 
 * Définition du label
 * Définition des niveaux
@@ -33,7 +34,7 @@ Installation
 
 ```
         $ cd <path>/kibana/installedPlugins
-        $ git clone <depot> traffic-sg
+        $ git clone -b 4.x <depot> traffic-sg
 ```
 
 
