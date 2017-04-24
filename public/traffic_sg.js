@@ -28,7 +28,8 @@ define(function (require) {
           width: 50,
           redThreshold: 20,
           greenThreshold: 80,
-          invertScale: null
+          invertScale: null,
+          handleNoResults: true
         },
         editor: require('plugins/traffic_sg/traffic_sg_params.html')
       },
