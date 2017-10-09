@@ -5,7 +5,7 @@ import { TemplateVisTypeProvider } from 'ui/template_vis_type/template_vis_type'
 import { VisTypesRegistryProvider } from 'ui/registry/vis_types';
 import { VisSchemasProvider } from 'ui/vis/schemas';
 import trafficVisTemplate from 'plugins/traffic_sg/traffic_sg.html';
-import networkVisParamsTemplate from 'plugins/traffic_sg/traffic_sg_params.html';
+import trafficVisParamsTemplate from 'plugins/traffic_sg/traffic_sg_params.html';
 
 
 // register the provider with the visTypes registry
@@ -33,7 +33,7 @@ function MetricVisProvider(Private) {
         invertScale: null,
         handleNoResults: true
       },
-      editor: networkVisParamsTemplate
+      editor: trafficVisParamsTemplate
     },
     schemas: new Schemas([
       {
